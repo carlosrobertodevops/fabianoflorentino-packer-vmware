@@ -2,6 +2,6 @@
 
 ## **VMware Builder**
 
-* ### **(from ISO)**
+* ### **[(from ISO)](vmware-iso/docs/README.md)**
 
-* ### **(from VMX)**
+* ### **[(from VMX)](vmware-vmx/docs/README.md)**
