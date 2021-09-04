@@ -10,6 +10,7 @@ export PKR_VAR_ssh_password=<password>
 ```
 
 * ### **Help**
+
 ```shell
 # Validate if you in the same directory with the makefile
 echo $PWD
