@@ -24,12 +24,14 @@ centos          Build a Virtual Machine with CentOS guest OS
 ```
 
 * ### **Build all**
+
 ```shell
 # Build new all virtual machine
 make all
 ```
 
 * ### **Build specific CentOS virtual machine**
+
 ```shell
 # Build new CentOS virtual machine
 make centos
