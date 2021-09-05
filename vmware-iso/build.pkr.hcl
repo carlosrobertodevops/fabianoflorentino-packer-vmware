@@ -1,11 +1,13 @@
 source "vmware-iso" "centos" {
+  headless              = var.headless
   iso_url               = var.iso_url
   iso_checksum          = var.iso_checksum
   version               = var.version
   guest_os_type         = var.guest_os_type
   vm_name               = var.vm_name
   snapshot_name         = var.snapshot_name
-  headless              = var.headless
+  tools_upload_flavor   = var.tools_upload_flavor
+  shutdown_command      = var.shutdown_command
   
   # Hardware configuration
   cpus                  = var.cpus
@@ -24,10 +26,7 @@ source "vmware-iso" "centos" {
   # Optional SSH fields
   ssh_username          = var.ssh_username
   ssh_password          = var.ssh_password
-  ssh_timeout           = "6300s"
-  
-  tools_upload_flavor   = "linux"
-  shutdown_command      = "shutdown -P now"
+  ssh_timeout           = var.ssh_timeout
   
   # Output configuration
   output_directory      = "${var.output_directory}/${var.vm_name}"
@@ -35,7 +34,7 @@ source "vmware-iso" "centos" {
 
 build {
   sources = [
-      "sources.vmware-iso.centos"
+    "sources.vmware-iso.centos"
   ]
   provisioner "shell" {
       execute_command = "echo \"$HOSTNAME - Update System\""

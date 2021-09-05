@@ -34,6 +34,15 @@ variable "snapshot_name" {
     default = "snapshot-1"
 }
 
+variable "tools_upload_flavor" {
+    default = ""
+}
+
+variable "shutdown_command" {
+    default = "shutdown -P now"
+}
+
+
 # Hardware configuration
 variable "cpus" {
   default = "1"
@@ -95,10 +104,17 @@ variable "ssh_password" {
     default = "packer"
 }
 
+variable "ssh_timeout" {
+    default = "10m"
+}
+
+
+# Output configuration
 variable "output_directory" {
     type    = string
     default = "./"
 }
+
 
 # Build configuration
 variable "scripts_to_run" {
