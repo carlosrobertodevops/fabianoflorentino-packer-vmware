@@ -6,7 +6,12 @@ variable "headless" {
 
 variable "iso_url" {
   type    = string
-  default = "guet-os.img"
+  default = "guest-os.img"
+}
+
+variable "source_path" {
+    type    = string
+    default = "/Users/florentino/Virtual Machines.localized"
 }
 
 variable "iso_checksum" {
