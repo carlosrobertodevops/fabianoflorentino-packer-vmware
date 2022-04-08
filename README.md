@@ -2,6 +2,8 @@
 
 ## **VMware Builder**
 
+**Documentation:** [https://www.packer.io/plugins/builders/vmware](https://www.packer.io/plugins/builders/vmware)
+
 * ### **[(from ISO)](builder-iso/docs/README.md)**
 
 ![builder-iso](builder-iso/docs/builder-iso.png)
