@@ -37,3 +37,5 @@ make all
 ```shell
 # Build new virtual machine with Builder ISO
 make builder-iso
+
+![builder-iso.png](./builder-iso.png)

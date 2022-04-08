@@ -37,3 +37,5 @@ make all
 ```shell
 # Build new virtual machine with Builder VMX
 make builder-vmx
+
+![builder-vmx.png](./builder-vmx.png)
