@@ -1,4 +1,4 @@
-# **vmware-iso**
+# **builder-vmx**
 
 ## **Usage:**
 
@@ -21,7 +21,8 @@ make help
 help            Show this help
 validate        Validate the hcl files
 all             Build all Virtual Machines on VMware
-centos          Build a Virtual Machine with CentOS guest OS
+builder-iso     Build a Virtual Machine with ISO Builder
+builder-vmx     Build a Virtual Machine with VMX Builder
 ```
 
 * ### **Build all**
@@ -31,9 +32,8 @@ centos          Build a Virtual Machine with CentOS guest OS
 make all
 ```
 
-* ### **Build specific CentOS virtual machine**
+* ### **Build virtual machine**
 
 ```shell
-# Build new CentOS virtual machine
-make centos
-```
+# Build new virtual machine with Builder VMX
+make builder-vmx

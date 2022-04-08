@@ -17,5 +17,5 @@ builder-iso: ## Build a Virtual Machine with ISO Builder
 	@packer build --only vmware-iso.centos --var-file=./builder-iso.pkrvars.hcl .
 
 .PHONY: builder-vmx
-builder-iso: ## Build a Virtual Machine with VMX Builder
+builder-vmx: ## Build a Virtual Machine with VMX Builder
 	@packer build --only vmware-vmx.centos --var-file=./builder-vmx.pkrvars.hcl .
