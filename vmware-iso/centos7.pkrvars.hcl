@@ -1,9 +1,9 @@
 # Source configuration
-iso_url             = "/Users/florentino/Applications/iso/linux/custom/centos7-custom-img-disk70gb.iso"
-iso_checksum        = "file:/Users/florentino/Applications/iso/linux/custom/centos7-custom-img-disk70gb.sum"
+iso_url             = "/Users/florentino/Applications/iso/linux/custom/centos7-2009-custom-img-disk80gb-v0.1.iso"
+iso_checksum        = "file:/Users/florentino/Applications/iso/linux/custom/centos7-2009-custom-img-disk80gb-v0.1.iso.sum"
 version             = "12"
 guest_os_type       = "centos7"
-vm_name             = "centos7-base-vm.v4"
+vm_name             = "centos7-iam-v0.1"
 snapshot_name       = "initial-state"
 headless            = true
 tools_upload_flavor = "linux"
